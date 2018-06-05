@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDDRN-Ic9X7EwEQtgZ6OyvyPgqOeS5jpcg",
+        authDomain: "jsnotes-ac1c9.firebaseapp.com",
+        databaseURL: "https://jsnotes-ac1c9.firebaseio.com",
+        projectId: "jsnotes-ac1c9",
+        storageBucket: "",
+        messagingSenderId: "213945103014"
+    };
+    firebase.initializeApp(config);
+    console.log(firebase);
+    
+</script>
+</head>
+<body>
+    <form action="">
+        <label>
+            Header:
+            <input type="text" name="header" id="form_header">
+        </label>
+        <label>
+            Description: <textarea name="description" id="form_description" cols="30" rows="10"></textarea>
+        </label>
+        <input type="submit" value="add to Google">
+    </form>
+
+<div id="app"></div>
+<template id="noteTemp">
+    <article>
+        <h1></h1>
+        <div class="description"></div>
+    </article>
+</template>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
